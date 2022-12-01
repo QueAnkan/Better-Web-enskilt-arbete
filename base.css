@@ -1,3 +1,92 @@
 :root {
 	--offwhite:#E9F1FC;
+	--darkblue:#00008B;
+	--footer__text--padding: 0 0 1em 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&family=Inter&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+
+html, body{
+		height:100%;
+}
+
+body{
+	background-color: var(--offwhite);
+	display:flex;
+	flex-direction: column;
+}
+
+.header{
+	display:flex;
+	align-items: flex-start;
+	justify-content:space-between;
+	background-color: var(--offwhite);
+	height:3rem;
+}
+
+.fa-bars{
+	color:var(--darkblue);
+	padding:0.8rem;
+}
+
+main{
+	height:500px;
+}
+
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color:var(--darkblue);
+	color: var(--offwhite);
+	font-family: 'Encode Sans Semi Condensed', sans-serif;
+	
+}
+
+.footer__contact{
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+
+
+.footer__company-name{
+	padding:1em 0;
+}
+
+.footer__adress{
+	padding:var(--footer__text--padding);
+}
+
+.footer__adress>ul{
+	list-style: none;
+	padding:0.2em 0;
+
+}
+
+.footer__e-mail{
+	display:flex;
+	align-items:center;
+	justify-content: flex-start;
+	padding: var(--footer__text--padding);
+}
+
+.fa-envelope{
+	padding:0 0.4em 0 0 
+
+}
+
+.footer__social-media{
+   padding:var(--footer__text--padding)
+}
+
+.footer__social-media> .fa-brands{
+	padding:0.3rem;
 }
