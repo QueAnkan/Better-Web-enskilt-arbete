@@ -196,8 +196,7 @@ footer h4{
 .footer__e-mail>a{
 	display:flex;
 	align-items: center;
-	padding:0;
-	border: 1px dashed hotpink;
+	padding:0;	
 }
 
 .footer__visit{
@@ -237,6 +236,7 @@ footer a{
 		top: auto;
 		height: auto;
 		display: block;
+		
 	}
 	
 	.main-menu ul {
@@ -281,7 +281,6 @@ footer a{
 	.footer__e-mail{
 		grid-column-start: 2;
 		padding:0 1em 1em 0;
-		border: 1px dashed hotpink;
 	}
 
 	.footer__visit{
