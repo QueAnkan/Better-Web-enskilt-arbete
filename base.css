@@ -38,6 +38,10 @@ a{
 	color:var(--darkblue)
 }
 
+a:hover, a:focus, .fa-bars:hover, .fa-bars:focus{
+	color:var(--gold);
+}
+
 .header{
 	display:flex;
 	align-items: center;
@@ -55,7 +59,6 @@ a{
 .fa-bars{
 	padding:15px;
 }
-/*hamburger-test*/
 
 .sr-only {
 	position: absolute;
@@ -66,101 +69,86 @@ a{
 	overflow: hidden;
 	clip: rect(0,0,0,0);
 	border: 0;
-  }
+}
 
-  .main-menu {
+.main-menu {
 	position: absolute;
 	display: none;
 	left: 200px;
 	top: 0;
 	height: 200px; 
-	  overflow-x: visible;
-	  transition: left 0.3s ease,
+		overflow-x: visible;
+		transition: left 0.3s ease,
 						box-shadow 0.3s ease;
-	  z-index: 10;
-  }
-  
-  .main-menu ul {
+		z-index: 10;
+}
+
+.main-menu ul {
 	list-style: none;
 	margin: 0;
 	padding: 4em 0 0;
 	/* Hide shadow w/ -8px while 'closed' */
 	-webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-	   -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+		-moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
 			box-shadow: -8px 0 8px rgba(0,0,0,.5);
 	min-height: 100%;
 	width: 100vw;
 	background: var(--lightblue);
-  }
+}
 
-  .main-menu a {
+.main-menu a {
 	display: block;
 	padding: .75em 15px;
 	line-height: 1em;
 	text-align: center;
 	font-family: 'Encode Sans Semi Condensed', sans-serif;
-	
-  }
-  
-  .main-menu ul a:hover,
-  .main-menu a:focus {
-	color:var(--gold);
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
 	text-decoration:underline ;
-  }
+}
 
-  .fa-xmark:hover, .fa-xmark:focus{
-	background-color: var(--lightblue);
+.fa-xmark:hover, .fa-xmark:focus{
 	color:var(--gold);
+}
 
-
-  }
-  
-  .main-menu .menu-close {
+.main-menu .menu-close {
 	position: absolute;
 	right: 0;
 	top: 0;
-  }
+}
 
-  .main-menu:target,
+.main-menu:target,
 .main-menu[aria-expanded="true"] {
-  display: block;
-  left: 0;
-  outline: none;
+	display: block;
+	left: 0;
+	outline: none;
 }
 
 .main-menu:target .menu-close,
 .main-menu[aria-expanded="true"] .menu-close {
-  z-index: 12;
+  	z-index: 12;
 }
 
 .main-menu:target ul,
 .main-menu[aria-expanded="true"] ul {
-  position: relative;
-  z-index: 11;
+	position: relative;
+	z-index: 11;
 }
 
 .main-menu:target + .backdrop,
 .main-menu[aria-expanded="true"] + .backdrop{
-  position: absolute;
-  display: block;  
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index:9;
-  cursor: default;
+	position: absolute;
+	display: block;  
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index:9;
+	cursor: default;
 }
 
-
-
-
-
-
-
-
-
-
-/* slut på test*/
 
 main{
 	height:90%;
@@ -175,7 +163,6 @@ footer{
 	background-color:var(--lightblue);
 	color: var(--darkblue);
 	font-family: 'Encode Sans Semi Condensed', sans-serif;
-	
 }
 
 .footer__contact{
@@ -190,8 +177,7 @@ footer h4{
 }
 
 .footer__company-name{
-	padding:1em 0;
-	
+	padding:1em 0;	
 }
 
 .footer__e-mail{
@@ -247,9 +233,9 @@ footer a{
 	
 	.main-menu {
 		position: relative;
-			left: auto;
-			top: auto;
-			height: auto;
+		left: auto;
+		top: auto;
+		height: auto;
 		display: block;
 	}
 	
@@ -266,8 +252,11 @@ footer a{
 	
 	.main-menu a {
 		color: var(--darkblue);
+	}
 
-	
+	.main-menu a:hover, .main-menu a:focus{
+		color: var(--gold);
+		text-decoration: none;
 	}
 
 	footer{
@@ -341,10 +330,12 @@ footer a{
 	
 	.main-menu a {
 		color: var(--darkblue);
-
-	
 	}
 
+	.main-menu a:hover, .main-menu a:focus{
+		color: var(--gold);
+		text-decoration: none;
+	}
 
 	footer{
 		display:flex;
@@ -399,9 +390,13 @@ footer a{
 	
 	.main-menu a {
 		color: var(--darkblue);
-
-	
 	}
+
+	.main-menu a:hover, .main-menu a:focus{
+		color: var(--gold);
+		text-decoration: none;
+	}
+
 
 	footer{
 		display:flex;

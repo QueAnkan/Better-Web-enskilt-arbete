@@ -15,20 +15,33 @@
 	<img src="Logga.png" alt="Företagslogga Carlstad Frontend Network" title="Carlstad Frontend Network">
 	
 	<!-- hamburgare nav test-->
-	<div>
-	<input type="checkbox" class="header__main-menu" id="header__main-menu">
-	<label for="header__main-menu" class="hamburger">
-	<span class="fa-solid fa-bars fa-3x" ></span></label>
-	</div>
-	<nav class="navigation">
-		<ul class="nvigation__list">
-			<li> <a href="#"> Program </a></li>
-			<li> <a href="#"> Kontakt </a></li>
-			<li> <a href="#"> Anmälan </a></li>
+	<a href="#main-menu"
+		id="main-menu-toggle"
+		class="menu-toggle"
+		aria-label="Öppna huvudmeny">
+		<span class="sr-only">Öppna huvudmeny</span>
+		<span class="fa fa-bars fa-2x" aria-hidden="true"></span>
+ 	 </a>
+  
+	<nav id="main-menu" class="main-menu" aria-label="Huvudmeny">
+		<a href="#main-menu-toggle"
+		id="main-menu-close"
+		class="menu-close"
+		aria-label="Stäng huvudmeny">
+		<span class="sr-only">Stäng huvudmeny</span>
+		<span class="fa fa-solid fa-xmark fa-2x"
+		aria-hidden="true"></span>
+		</a>
+		<ul class="navigation__list">
+		<li><a href="#">Program</a></li>
+		<li><a href="#">Anmälan</a></li>
+		<li><a href="#">Kontakt</a></li>
 		</ul>
-
-
 	</nav>
+	<a href="#main-menu-toggle"
+		class="backdrop"
+		tabindex="-1"
+		aria-hidden="true" hidden></a>
 
 
 </header>
@@ -42,9 +55,9 @@
 			<a href="mailto:info@cfn.se"><i class="fa-regular fa-envelope fa-2x"></i>
 			<p>info@cfn.se</p></a>
 		</div>
-		<div class=footer__adress>
+		<div class=footer__visit>
 			<h4>Besöksadress</h4>
-			<ul>
+			<ul class="footer__adress">
 				<li>Drottninggatan 26</li>
 				<li>652 25 Karlstad</li>
 			</ul>
