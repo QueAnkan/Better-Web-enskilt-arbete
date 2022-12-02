@@ -42,8 +42,6 @@
 		class="backdrop"
 		tabindex="-1"
 		aria-hidden="true" hidden></a>
-
-
 </header>
 <main>
 </main>
@@ -52,8 +50,12 @@
 		<h3 class="footer__company-name">Carlstad Frontend Network</h3>
 		<div class=footer__e-mail>
 			<h4>Kontakta oss</h4>
-			<a href="mailto:info@cfn.se"><i class="fa-regular fa-envelope fa-2x"></i>
-			<p>info@cfn.se</p></a>
+			<label for="mailto" hidden>Klicka för att mejla oss</label>
+			<a href="mailto:info@cfn.se" id="mailto">
+				<span class="fa-regular fa-envelope fa-2x" aria-hidden="true">
+				</span>
+				<p>info@cfn.se</p>
+			</a>
 		</div>
 		<div class=footer__visit>
 			<h4>Besöksadress</h4>
@@ -64,17 +66,21 @@
 		</div>
 		<div class="footer__social-media">
 			<h4>Följ oss</h4>
-			<a href="https://www.facebook.com/" target="_blank">
-				<i class="fa-brands fa-square-facebook fa-2x"></i>
+			<label for="facebook-link" hidden> Facebook-länk</label>
+			<a href="https://www.facebook.com/" target="_blank" id="facebook-link">
+				<span class="fa-brands fa-square-facebook fa-2x"></span>
 			</a>
-			<a href="https://instagram.com" target="_blank">
-				<i class="fa-brands fa-instagram fa-2x"></i>
+			<label for="instagra-link" hidden>Instagram-länk</label>
+			<a href="https://instagram.com" target="_blank" id="instagram-länk">
+				<span class="fa-brands fa-instagram fa-2x"></span>
 			</a>
-			<a href="https://linkedin.com" target="_blank">
-				<i class="fa-brands fa-linkedin fa-2x"></i>
+			<label for="linkedin-link" hidden> Linkedin-länk</label>
+			<a href="https://linkedin.com" target="_blank" id="linkedin-link">
+				<span class="fa-brands fa-linkedin fa-2x"></span>
 			</a>
-			<a href="http://www.github.com" target="_blank">
-				<i class="fa-brands fa-square-github fa-2x"></i>
+			<label for="github-link" hidden>Github-länk</label>
+			<a href="http://www.github.com" target="_blank" id="github-link">
+				<span class="fa-brands fa-square-github fa-2x"></span>
 			</a>
 		</div>
 	</section>
