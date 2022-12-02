@@ -3,7 +3,6 @@
 	--darkblue:#00008B;
 	--lightblue:#EDF3FD;
 	--gold:#D4B662;
-
 	--footer__text--padding: 0 0 1em 0;
 }
 
@@ -60,6 +59,8 @@ a:hover, a:focus, .fa-bars:hover, .fa-bars:focus{
 	padding:15px;
 }
 
+/*Här börjar navbar*/
+
 .sr-only {
 	position: absolute;
 	width: 1px;
@@ -69,8 +70,8 @@ a:hover, a:focus, .fa-bars:hover, .fa-bars:focus{
 	overflow: hidden;
 	clip: rect(0,0,0,0);
 	border: 0;
-}
-
+}     
+     
 .main-menu {
 	position: absolute;
 	display: none;
@@ -197,7 +198,6 @@ footer h4{
 	display:flex;
 	align-items: center;
 	padding:0;
-	border: 1px dashed hotpink;
 }
 
 .footer__visit{
@@ -281,7 +281,6 @@ footer a{
 	.footer__e-mail{
 		grid-column-start: 2;
 		padding:0 1em 1em 0;
-		border: 1px dashed hotpink;
 	}
 
 	.footer__visit{
