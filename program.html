@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carlstad Frontend Network</title>
+	<link rel="stylesheet" href="base.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/1af20f8784.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="header">
+	<img src="Logga.png" alt="Företagslogga Carlstad Frontend Network" title="Carlstad Frontend Network">
+	
+	<!-- hamburgare nav test-->
+	<a href="#main-menu"
+		id="main-menu-toggle"
+		class="menu-toggle"
+		aria-label="Öppna huvudmeny">
+		<span class="sr-only">Öppna huvudmeny</span>
+		<span class="fa fa-bars fa-2x" aria-hidden="true"></span>
+ 	 </a>
+  
+	<nav id="main-menu" class="main-menu" aria-label="Huvudmeny">
+		<a href="#main-menu-toggle"
+		id="main-menu-close"
+		class="menu-close"
+		aria-label="Stäng huvudmeny">
+		<span class="sr-only">Stäng huvudmeny</span>
+		<span class="fa fa-solid fa-xmark fa-2x"
+		aria-hidden="true"></span>
+		</a>
+		<ul class="navigation__list">
+		<li><a href="#">Program</a></li>
+		<li><a href="#">Anmälan</a></li>
+		<li><a href="#">Kontakt</a></li>
+		</ul>
+	</nav>
+	<a href="#main-menu-toggle"
+		class="backdrop"
+		tabindex="-1"
+		aria-hidden="true" hidden></a>
+</header>
+<main>
+</main>
+<footer class="footer">
+	<section class="footer__contact">
+		<h3 class="footer__company-name">Carlstad Frontend Network</h3>
+		<div class=footer__e-mail>
+			<h4>Kontakta oss</h4>
+			<label for="mailto" hidden>Klicka för att mejla oss</label>
+			<a href="mailto:info@cfn.se" id="mailto">
+				<span class="fa-regular fa-envelope fa-2x" aria-hidden="true">
+				</span>
+				<p>info@cfn.se</p>
+			</a>
+		</div>
+		<div class=footer__visit>
+			<h4>Besöksadress</h4>
+			<ul class="footer__adress">
+				<li>Drottninggatan 26</li>
+				<li>652 25 Karlstad</li>
+			</ul>
+		</div>
+		<div class="footer__social-media">
+			<h4>Följ oss</h4>
+			<label for="facebook-link" hidden> Facebook-länk</label>
+			<a href="https://www.facebook.com/" target="_blank" id="facebook-link">
+				<span class="fa-brands fa-square-facebook fa-2x"></span>
+			</a>
+			<label for="instagra-link" hidden>Instagram-länk</label>
+			<a href="https://instagram.com" target="_blank" id="instagram-länk">
+				<span class="fa-brands fa-instagram fa-2x"></span>
+			</a>
+			<label for="linkedin-link" hidden> Linkedin-länk</label>
+			<a href="https://linkedin.com" target="_blank" id="linkedin-link">
+				<span class="fa-brands fa-linkedin fa-2x"></span>
+			</a>
+			<label for="github-link" hidden>Github-länk</label>
+			<a href="http://www.github.com" target="_blank" id="github-link">
+				<span class="fa-brands fa-square-github fa-2x"></span>
+			</a>
+		</div>
+	</section>
+</footer>	
+</body>
+</html>
