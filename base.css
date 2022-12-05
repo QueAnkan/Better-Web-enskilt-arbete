@@ -1,10 +1,11 @@
 :root {
-	--offwhite:#FFFCF4;
+	--offwhite:#fffcf5;
 	--darkblue:#00008B;
 	--lightblue:#EDF3FD;
 	--gold:#D4B662;
 	--footer__text--padding: 0 0 1em 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&family=Federo&family=Inter&display=swap');
 
 
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&family=Inter&display=swap');
@@ -13,12 +14,9 @@
 	padding:0;
 }
 
-html, body{
-		height:100%;
-}
-
 html{
 	background-color: #ffffff;
+	height:100%;
 }
 
 body{
@@ -26,6 +24,26 @@ body{
 	display:flex;
 	flex-direction: column;
 	font-size: 18px;
+	position:relative;
+	min-height: 100%;
+}
+
+main, button{
+	font-family: 'Federo', sans-serif;
+}
+
+button{
+	padding:0.7em;
+	border:none;
+	border-radius: 2em;
+	background-color: var(--gold);
+	font-size: 1.2rem;
+	box-shadow: 0.2rem 0.2rem 0.3rem hsl(44, 60%, 40%);
+}
+
+button:hover, button:focus{
+	background-color: rgba(212, 182, 98, 0.7);
+	cursor: pointer;
 }
 
 .navigation__list, .footer__adress {
@@ -48,6 +66,8 @@ a:hover, a:focus, .fa-bars:hover, .fa-bars:focus{
 	background-color: var(--lightblue);
 	height:fit-content;
 	position:sticky;
+	top:0;
+	z-index:8;
 }
 
 .fa{
@@ -150,11 +170,6 @@ a:hover, a:focus, .fa-bars:hover, .fa-bars:focus{
 	cursor: default;
 }
 
-
-main{
-	height:90%;
-}
-
 /*Här börjar footer*/
 
 footer{
@@ -197,7 +212,7 @@ footer h4{
 .footer__e-mail>a{
 	display:flex;
 	align-items: center;
-	padding:0;
+	padding:0;	
 }
 
 .footer__visit{
@@ -237,6 +252,7 @@ footer a{
 		top: auto;
 		height: auto;
 		display: block;
+		
 	}
 	
 	.main-menu ul {
