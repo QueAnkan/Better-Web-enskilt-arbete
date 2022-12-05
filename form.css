@@ -1,0 +1,76 @@
+.form__main{
+	background-color:var(--lightblue);
+	margin:2rem auto;
+	padding:1rem 2rem;
+	border-radius: 10px;
+	box-shadow: 0.1rem 0.1rem 0.3rem hsl(44, 60%, 30%);
+	justify-content:center;
+	align-items:center;
+  }
+  .form__main >h1{
+	margin-left:1rem;
+  }
+  
+  form{
+	 display:flex;
+	flex-direction:column;
+	margin:1rem;
+  }
+  
+  .form__days{
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	padding:1rem 0;
+  }
+  
+	input[type=checkbox] {
+			  vertical-align: middle;
+			  position: relative;
+			  bottom: 1px;
+		  }
+			
+		 .form__days > label {
+			  display: block;
+		   padding-top:0.5rem;
+		  }
+  
+  .form__personals{
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	padding-bottom: 1rem;
+	grid-row:1/8;
+  }
+  
+  .form__personals>*{
+	 width:10rem;
+  }
+  
+  .form__personals>:nth-child(odd){
+	margin-bottom:0.7rem;
+  }
+  
+  .form__personals>:nth-child(11), .form__personals>:nth-child(15){
+   width:25%;
+  }
+  
+  .form__food{
+	padding-bottom: 1rem;
+  }
+  
+  .form__food p{
+	padding-bottom:0.7rem;
+  }
+  
+  .form__food >label{
+	padding-right:0.5rem
+  }
+  .form__button{
+	width:fit-content;
+	padding: 0.7rem;
+	margin-top:1.5rem;
+	border-radius: 25px;
+	margin-left:9rem;
+	box-shadow:hsl(218, 40%, 45%)
+  }
