@@ -7,7 +7,7 @@
 	<title>Document</title>
 </head>
 <link rel="stylesheet" href="base.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="form.css">
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,9 +49,58 @@
 			aria-hidden="true" hidden></a>
 	</header>
 
-	<main>
-
-		
+	<main class="form__main">
+			<h1>Min bokning</h1>
+		  <form action="#" >
+			<div class="form__days">
+			<h2>Jag vill boka följande dagar:</h2>
+			 <label >
+				<input type="checkbox" id="day1">
+				Dagspass fredag</label>
+			  <label>
+				<input type="checkbox" id="day2">
+			  Dagspass lördag</label>
+			  <label >
+				<input type="checkbox" id="day3" >
+			  Dagspass söndag</label>
+			<label >
+			  <input type="checkbox" id="weekend" >
+			Hela helgen
+			</label>   
+		  </div>
+			<div class="form__personals">
+			  <h2>Personuppgifter</h2>
+			  <label for="fname">*Förnamn:</label>
+			  <input type="text" id="fname"  minlenght="2" placeholder="Anna" required>
+			  <label for="lname">*Efternamn: </label>
+			  <input type="text" id="lname"  minlenght="2" placeholder="Andersson" required>
+			  <label for="email"> *E-post:</label>
+			  <input type="email" id="email" placeholder="epost@exempel.com" required>
+			  <label for="street-adress">Postadress:</label> 
+			  <input type="text" id="street-name" name="street-name" placeholder="Konferansgatan 1">
+			  <label for="zip-code">Postnummer:</label> 
+			  <input type="text" id="zip-code" name="zip-code" pattern="[1-9]{5}" placeholder="12345">  
+			  <label for="town">Stad:</label>
+			  <input type="text" id="town" name="town" placeholder="Storstaden" >
+			  <label for="birthday">*Födelseår:</label>
+			  <input type="number" id="birthday" name="birthday" min= 1930 max=2007 required>
+		   </div>
+			
+		  <div class="form__food">
+			  <h2>Val av mat:</h2><p>(Middag på kvällen ingår i din bokning) </p>
+			
+			<input type="radio" id="food-meat" name="food">
+			<label for="food-meat"> Kött</label>
+			<input type="radio" id="food-fish" name="food">
+			<label for="food-fish"> Fisk</label>
+			<input type="radio" id="food-vego" name="food">
+			<label for="food-vego"> Veganskt</label>
+		  </div>
+		  <textarea name="message" rows="8" cols="30" placeholder="Ange eventuella allergier eller andra önskemål"></textarea>
+			<button type="button" class=form__button>Registrera dig</button>
+			</form> 
+			
+		  <p>*Obligatoriskt</p>
 	</main>
 
 	<footer class="footer">
