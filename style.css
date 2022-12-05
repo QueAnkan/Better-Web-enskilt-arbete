@@ -4,5 +4,24 @@
 	align-items: center; 
 	position: relative;
 	height:auto;
+	text-align: center;
 
+}
+
+.index-main__content{
+	margin: 2rem 1.5rem;
+	max-width: 580px;
+}
+
+.main__section__article>h2{
+margin: 1.5rem 0 1rem 0;
+
+}
+
+.index-main__button-program {
+	margin-bottom: 2rem;
+}
+
+.index-main__button-signup{
+	margin-bottom: 3rem;
 }
