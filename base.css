@@ -27,6 +27,7 @@ body{
 	display:flex;
 	flex-direction: column;
 	font-size: 18px;
+	position:relative;
 }
 
 .navigation__list, .footer__adress {
@@ -149,11 +150,6 @@ a:hover, a:focus, .fa-bars:hover, .fa-bars:focus{
 	cursor: default;
 }
 
-
-main{
-	height:90%;
-}
-
 /*Här börjar footer*/
 
 footer{
@@ -163,6 +159,9 @@ footer{
 	background-color:var(--lightblue);
 	color: var(--darkblue);
 	font-family: 'Encode Sans Semi Condensed', sans-serif;
+	position:absolut;
+	bottom:0;
+	width:100%;
 }
 
 .footer__contact{
