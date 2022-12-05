@@ -8,13 +8,16 @@
 	<link rel="stylesheet" href="base.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&family=Federo&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/1af20f8784.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header class="header">
-	<img src="Logga.png" alt="Företagslogga Carlstad Frontend Network" title="Carlstad Frontend Network">
+	<img src="Logga.png" 
+	alt="Företagslogga Carlstad Frontend Network" title="Carlstad Frontend Network">
 	
-	<!-- hamburgare nav test-->
 	<a href="#main-menu"
 		id="main-menu-toggle"
 		class="menu-toggle"
@@ -33,6 +36,7 @@
 		aria-hidden="true"></span>
 		</a>
 		<ul class="navigation__list">
+		<li> <a href="#">Hem</a> </li>	
 		<li><a href="#">Program</a></li>
 		<li><a href="#">Anmälan</a></li>
 		<li><a href="#">Kontakt</a></li>
@@ -42,9 +46,30 @@
 		class="backdrop"
 		tabindex="-1"
 		aria-hidden="true" hidden></a>
+	
 </header>
-<main>
+
+<main class="index-main">
+	<picture>
+		<source media="(max-width:767)" srcset="Hero-image-portrait.jpg">
+		<img src="Hero-image.webp" alt="Man vid talarpodium som pekar mot en blå bakgrund">
+	</picture>
+<Section class="index-main__content">
+<h1>Välkommen till CFN:s 
+	konferens 2022 
+	Bättre Webb</h1>
+
+<article><h2>Vi ses 9-11 december!</h2>
+	<p>Då är det dags för CFN:s årliga konferans för frontundutvecklare,  i år med temat Bättre Webb. </p>
+	<p>
+		Vi bjuder på flera inspirerande seminarier under helgen som behandlar  allt från arbetsmiljö till vikten av god UX-design. Passa också på att nätverka när kollegor från hela Sverige möts!</p>
+</article>
+</Section>
+<button type="button" class="index-main__button-program">Se programmet</button>
+
+<button type="button" class="index-main__button-signup">Anmäl direkt</button>
 </main>
+
 <footer class="footer">
 	<section class="footer__contact">
 		<h3 class="footer__company-name">Carlstad Frontend Network</h3>
