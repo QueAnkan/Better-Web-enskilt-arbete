@@ -1,11 +1,12 @@
 :root {
-	--offwhite:#FFFCF4;
+	--offwhite:#fffcf5;
 	--darkblue:#00008B;
 	--lightblue:#EDF3FD;
-	--gold:#D4B662;
+	--gold:rgb(212, 182, 98);
 
 	--footer__text--padding: 0 0 1em 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&family=Federo&family=Inter&display=swap');
 
 
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&family=Inter&display=swap');
@@ -26,6 +27,24 @@ body{
 	font-size: 18px;
 	position:relative;
 	min-height: 100%;
+}
+
+main, button{
+	font-family: 'Federo', sans-serif;
+}
+
+button{
+	padding:0.7em;
+	border:none;
+	border-radius: 2em;
+	background-color: var(--gold);
+	font-size: 1.2rem;
+	box-shadow: 0.2rem 0.2rem 0.3rem hsl(44, 60%, 40%);
+}
+
+button:hover, button:focus{
+	background-color: rgba(212, 182, 98, 0.7);
+	cursor: pointer;
 }
 
 .navigation__list, .footer__adress {
@@ -159,6 +178,7 @@ footer{
 	background-color:var(--lightblue);
 	color: var(--darkblue);
 	font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
 
 .footer__contact{
 	display:flex;
