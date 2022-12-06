@@ -30,6 +30,10 @@
 	
 }
 
+.main__section__article>p{
+	padding-bottom: 1rem;
+}
+
 .main__section__article>h2{
 margin: 0rem 0 1.5rem 0;
 }
@@ -59,16 +63,17 @@ margin: 0rem 0 1.5rem 0;
 		left:4.5rem;
 	}
 
-	main__section__article{
+	.main__section__article{
 		margin: 0 2rem 2rem 1.5rem;
 		max-width: 580px;
 		position: relative;
-		/*top:-5rem;*/
 		font-weight: 600;
 		line-height: 1.5;
 		
 	}
+		
 }
+
 @media screen and (min-width:992px) and (max-width:1023px) {
 	.index__top-headline{
 		font-size: 1.7rem;
