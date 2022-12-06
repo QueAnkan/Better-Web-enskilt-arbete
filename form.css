@@ -5,10 +5,11 @@
 	border-radius: 10px;
 	display:flex;
 	flex-direction: column;
-	border: 0.5px solid var(--darkblue);
+	border: 0.01rem solid var(--gold);
 	justify-content:center;
 	align-items:center;
 	font-family:'Encode Sans Semi Condensed', sans-serif;
+	color:var(--darkblue)
 }
  
 .reservation-main h1{
@@ -16,11 +17,13 @@
 }
 
 .reservation-main  h2{
-	font-size: 1.2rem;
+	font-size: 1rem;
+	font-weight: 600;
+	padding-bottom: 0.5rem;
 }
 
 .reservation-main label, .reservation-main p {
-	font-size: 1rem;
+	font-size: 0.9rem;
 }
 
 .main__footnote, .reservation-main h1 {
@@ -34,18 +37,26 @@
 	margin:1rem;
 }
 
+.reservation-main__form>*{
+	padding:1rem 0;
+
+}
+
 input[type=radio] {
 	vertical-align: middle;
 	position: relative;
-
 	}
+
+input:hover, label:hover{
+	cursor:pointer;
+
+}	
 
 /*här slutar kod för mer övergripande regler*/
 
 .form__days{
 	display:flex;
 	flex-direction:column;
-	padding:1rem 0;
 }
 			
 .form__days > label {
@@ -61,7 +72,6 @@ input[type=radio] {
 	display:flex;
 	flex-direction:column;
 	align-items:flex-start;
-	padding:1rem 0;
 }
   
 .form__personals *{
@@ -87,9 +97,6 @@ height:1.2rem;
 
 /* Här slutar kod för personuppgifter*/
 
-.form__food{
-	padding-bottom: 1rem;
-}
 
 .form__food p{
 	padding-bottom:0.7rem;
@@ -119,7 +126,7 @@ height:1.2rem;
 			border-radius: 20px;
 			display:flex;
 			flex-direction: column;
-			border: 0.5px solid var(--darkblue);
+			border: 0.01rem solid var(--gold);
 			justify-content:center;
 			align-items:center;
 			font-family:'Encode Sans Semi Condensed', sans-serif;
@@ -136,7 +143,7 @@ height:1.2rem;
 		border-radius: 20px;
 		display:flex;
 		flex-direction: column;
-		border: 0.5px solid var(--darkblue);
+		border: 0.01rem solid var(--gold);
 		justify-content:center;
 		align-items:center;
 		font-family:'Encode Sans Semi Condensed', sans-serif;
@@ -177,7 +184,7 @@ height:1.2rem;
 		border-radius: 20px;
 		display:flex;
 		flex-direction: column;
-		border: 0.5px solid var(--darkblue);
+		border: 0.01rem solid var(--gold);
 		justify-content:center;
 		align-items:center;
 		font-family:'Encode Sans Semi Condensed', sans-serif;
@@ -218,7 +225,7 @@ height:1.2rem;
 		border-radius: 20px;
 		display:flex;
 		flex-direction: column;
-		border: 0.5px solid var(--darkblue);
+		border: 0.01rem solid var(--gold);
 		justify-content:center;
 		align-items:center;
 		font-family:'Encode Sans Semi Condensed', sans-serif;
