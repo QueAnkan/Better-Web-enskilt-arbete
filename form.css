@@ -1,0 +1,267 @@
+.reservation-main{
+	background-color:var(--lightblue);
+	margin:2rem auto;
+	padding:1rem 0rem;
+	border-radius: 10px;
+	display:flex;
+	flex-direction: column;
+	border: 0.01rem solid var(--gold);
+	justify-content:center;
+	align-items:center;
+	font-family:'Encode Sans Semi Condensed', sans-serif;
+	color:var(--darkblue)
+}
+ 
+.reservation-main h1{
+	padding-top:1rem;
+}
+
+.reservation-main  h2{
+	font-size: 1rem;
+	font-weight: 600;
+	padding-bottom: 0.5rem;
+}
+
+.reservation-main label, .reservation-main p {
+	font-size: 0.9rem;
+}
+
+.main__footnote, .reservation-main h1 {
+	align-self: flex-start;
+	margin-left:1rem;
+}
+
+.reservation-main__form{
+	display:flex;
+	flex-direction:column;
+	margin:1rem;
+}
+
+.reservation-main__form>*{
+	padding:1rem 0;
+
+}
+
+input[type=radio] {
+	vertical-align: middle;
+	position: relative;
+	}
+
+input:hover, label:hover{
+	cursor:pointer;	
+}	
+
+input:invalid {
+	box-shadow: 0 0 2px 1px var(--darkblue);
+	
+}
+
+.error-message {
+	/*visibility: hidden;*/
+	align-self: center;
+	margin:0;
+	
+}
+
+input:invalid + .error-message {
+	visibility:visible;
+}
+
+
+/*här slutar kod för mer övergripande regler*/
+
+.form__days{
+	display:flex;
+	flex-direction:column;
+}
+			
+.form__days > label {
+	display: block;
+	padding-top:0.5rem;
+}
+
+
+/*Här börjar kod för personuppgifter*/
+
+
+.form__personals{
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+}
+  
+.form__personals *{
+	width:9rem;
+}
+
+.form__personals>div{
+	display:flex;
+	flex-direction: column;
+}
+.form__personals input{
+margin-bottom:0.5rem;
+height:1.2rem;
+}
+
+.form__birthday>input, .form__zip-code>input{
+	width:50%
+}
+
+.form__street{
+	margin-top:2rem;
+}
+
+/* Här slutar kod för personuppgifter*/
+
+.form__food >label{
+	padding-right:0.5rem
+}
+.form__button{
+	width:fit-content;
+	padding: 0.7rem;
+	border-radius: 25px;
+	margin-left:3.5rem;
+	box-shadow:hsl(218, 40%, 45%)
+}
+
+
+
+/*Här börjar mediaqueries*/
+
+@media screen and (min-width:356px) and (max-width:767px) {
+		.reservation-main{
+			background-color:var(--lightblue);
+			margin:2rem auto;
+			padding:1rem 2rem;
+			border-radius: 20px;
+			display:flex;
+			flex-direction: column;
+			border: 0.01rem solid var(--gold);
+			justify-content:center;
+			align-items:center;
+			font-family:'Encode Sans Semi Condensed', sans-serif;
+		}
+}
+
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+	.reservation-main{
+		background-color:var(--lightblue);
+		margin:2rem auto;
+		padding:1rem 2rem;
+		border-radius: 20px;
+		display:flex;
+		flex-direction: column;
+		border: 0.01rem solid var(--gold);
+		justify-content:center;
+		align-items:center;
+		font-family:'Encode Sans Semi Condensed', sans-serif;
+	}
+
+	.form__personals{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.form__personals>h2{
+		grid-column: 1/span2;
+	}
+
+	.form__firstname, .form__birthday, .form__email, .form__street, .form__zip-code{
+		grid-column-start: 1;
+		margin-right:0.5rem;
+	}
+
+	.form__lastname{
+		grid-column-start: 2;
+	}
+
+	.form__button{
+		width:fit-content;
+		padding: 0.7rem;
+		margin-top:1.5rem;
+		border-radius: 25px;
+		margin-left:12rem;
+		box-shadow:hsl(218, 40%, 45%)
+	}
+}
+
+@media screen and (min-width:992px) and (max-width:1024px) {
+	.reservation-main{
+		background-color:var(--lightblue);
+		margin:2rem auto;
+		padding:1rem 2rem;
+		border-radius: 20px;
+		display:flex;
+		flex-direction: column;
+		border: 0.01rem solid var(--gold);
+		justify-content:center;
+		align-items:center;
+		font-family:'Encode Sans Semi Condensed', sans-serif;
+	}
+
+	.form__personals{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.form__personals>h2{
+		grid-column: 1/span2;
+	}
+
+	.form__firstname, .form__birthday, .form__email, .form__street, .form__zip-code{
+		grid-column-start: 1;
+		margin-right:0.5rem;
+	}
+
+	.form__lastname{
+		grid-column-start: 2;
+	}
+
+	.form__button{
+		width:fit-content;
+		padding: 0.7rem;
+		border-radius: 25px;
+		margin-left:12rem;
+		box-shadow:hsl(218, 40%, 45%)
+	}
+}
+
+@media screen and (min-width:1024px){
+	.reservation-main{
+		background-color:var(--lightblue);
+		margin:2rem auto;
+		padding:1rem 2rem;
+		border-radius: 20px;
+		display:flex;
+		flex-direction: column;
+		border: 0.01rem solid var(--gold);
+		justify-content:center;
+		align-items:center;
+		font-family:'Encode Sans Semi Condensed', sans-serif;
+	}
+
+	.form__personals{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.form__personals>h2{
+		grid-column: 1/span2;
+	}
+
+	.form__firstname, .form__birthday, .form__email, .form__street, .form__zip-code{
+		grid-column-start: 1;
+		margin-right:0.5rem;
+	}
+
+	.form__lastname{
+		grid-column-start: 2;
+	}
+
+	.form__button{
+		width:fit-content;
+		padding: 0.7rem;
+		border-radius: 25px;
+		margin-left:12rem;
+		box-shadow:hsl(218, 40%, 45%)
+	}
+}
