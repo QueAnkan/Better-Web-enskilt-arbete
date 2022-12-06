@@ -48,9 +48,25 @@ input[type=radio] {
 	}
 
 input:hover, label:hover{
-	cursor:pointer;
-
+	cursor:pointer;	
 }	
+
+input:invalid {
+	box-shadow: 0 0 2px 1px var(--darkblue);
+	
+}
+
+.error-message {
+	/*visibility: hidden;*/
+	align-self: center;
+	margin:0;
+	
+}
+
+input:invalid + .error-message {
+	visibility:visible;
+}
+
 
 /*här slutar kod för mer övergripande regler*/
 
@@ -97,18 +113,12 @@ height:1.2rem;
 
 /* Här slutar kod för personuppgifter*/
 
-
-.form__food p{
-	padding-bottom:0.7rem;
-}
-
 .form__food >label{
 	padding-right:0.5rem
 }
 .form__button{
 	width:fit-content;
 	padding: 0.7rem;
-	margin-top:1.5rem;
 	border-radius: 25px;
 	margin-left:3.5rem;
 	box-shadow:hsl(218, 40%, 45%)
@@ -210,7 +220,6 @@ height:1.2rem;
 	.form__button{
 		width:fit-content;
 		padding: 0.7rem;
-		margin-top:1.5rem;
 		border-radius: 25px;
 		margin-left:12rem;
 		box-shadow:hsl(218, 40%, 45%)
@@ -251,7 +260,6 @@ height:1.2rem;
 	.form__button{
 		width:fit-content;
 		padding: 0.7rem;
-		margin-top:1.5rem;
 		border-radius: 25px;
 		margin-left:12rem;
 		box-shadow:hsl(218, 40%, 45%)
