@@ -39,7 +39,6 @@
 			<ul class="navigation__list">
 				<li> <a href="#">Hem</a> </li>	
 				<li><a href="#">Program</a></li>
-				<li><a href="#">Anmälan</a></li>
 				<li><a href="#">Kontakt</a></li>
 			</ul>
 		</nav>
@@ -53,7 +52,7 @@
 			<h1>Anmälan</h1>
 		<form action="#" class="reservation-main__form">
 			<div class="form__days">
-				<h2>Antal dagar jag vill boka*</h2>
+				<h2>Jag vill anmäla mig för*</h2>
 				<label>
 					<input type="radio" id="weekend" name="days" required>
 				Hela helgen
@@ -71,7 +70,7 @@
 			<div class="form__personals">
 				<h2>Personuppgifter</h2>
 				<div class="form__firstname">
-					<label for="firstname">Förnamn*</label>
+					<label for="firstname">Förnamn* </label>
 					<input type="text" id="firstname"  minlenght="2" placeholder="Anna" required>
 				</div>
 				<div class="form__lastname">
@@ -87,8 +86,8 @@
 					<input type="email" id="email" placeholder="epost@exempel.com" required>
 				</div>
 				<div class="form__street">
-					<label for="street-adress">Postadress</label> 
-					<input type="text" id="street-name" name="street-name" placeholder="Konferansgatan 1">
+					<label for="street-adress">Gatuadress</label> 
+					<input type="text" id="street-name" name="street-name" placeholder="Konferansgatan 1" maxlength="40">
 				</div>
 				<div class="form__zip-code">	
 					<label for="zip-code">Postnummer</label> 
@@ -96,23 +95,23 @@
 				</div>
 				<div class="form__town">
 					<label for="town">Stad</label>
-					<input type="text" id="town" name="town" placeholder="Storstaden" >
+					<input type="text" id="town" name="town" placeholder="Storstaden" maxlength="20" >
 				</div>
 		  	</div>
 			
 		  	<div class="form__food">
-				<h2>Val av mat*</h2><p>(Middag ingår i din bokning) </p>
+				<h2>Välj till mat</h2>
 				
-				<input type="radio" id="food-meat" name="food" required>
+				<input type="radio" id="food-meat" name="food">
 				<label for="food-meat"> Kött</label>
 				<input type="radio" id="food-fish" name="food">
 				<label for="food-fish"> Fisk</label>
 				<input type="radio" id="food-vego" name="food">
 				<label for="food-vego"> Veganskt</label>
 		  	</div>
-		  	<textarea name="message" rows="8" cols="30" placeholder="Ange eventuella allergier eller andra önskemål">	
-			</textarea>
-			<button type="button" class=form__button>Skicka anmälan</button>
+		  	<textarea name="message" rows="6" cols="30" maxlength="100" placeholder="Ange eventuella allergier eller andra önskemål"></textarea>
+			<p class="error-message">Fyll i markerade fält!</p>
+			<button class=form__button>Skicka anmälan</button>
 		</form> 
 			
 		<p class="main__footnote">*Obligatoriskt</p>
