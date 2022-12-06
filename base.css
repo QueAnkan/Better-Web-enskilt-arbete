@@ -2,7 +2,7 @@
 	--offwhite:#fffcf5;
 	--darkblue:#00008B;
 	--lightblue:#EDF3FD;
-	--gold:#D4B662;
+	--gold:#d4b663;
 	--footer__text--padding: 0 0 1em 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&family=Federo&family=Inter&display=swap');
@@ -36,12 +36,16 @@ button{
 	border-radius: 2em;
 	background-color: var(--gold);
 	font-size: 1.2rem;
-	box-shadow: 0.2rem 0.2rem 0.3rem hsl(44, 60%, 40%);
+	box-shadow: 0.3rem 0.3rem 0.3rem hsl(44, 60%, 40%);
 }
 
 button:hover, button:focus{
 	background-color: rgba(212, 182, 98, 0.7);
 	cursor: pointer;
+}
+
+button:active{
+	box-shadow: 0.1rem 0.1rem 0.2rem hsl(44, 60%, 40%);
 }
 
 .navigation__list, .footer__adress {
