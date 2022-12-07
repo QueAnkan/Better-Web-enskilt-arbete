@@ -4,9 +4,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<link rel="stylesheet" href="base.css">
+	<title>Anmälan</title>
+	<link rel="stylesheet" href="base.css">
 	<link rel="stylesheet" href="form.css">
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,8 +15,8 @@
 </head>
 <body>
 	<header class="header">
-		<img src="Logga.png" 
-		alt="Företagslogga Carlstad Frontend Network" title="Carlstad Frontend Network">
+		<a href="index.html"><img src="Logga.png" 
+		alt="Företagslogga Carlstad Frontend Network" title="Carlstad Frontend Network"></a>
 		
 		<a href="#main-menu"
 			id="main-menu-toggle"
@@ -49,9 +48,9 @@
 	</header>
 
 	<main class="reservation-main">
-			<h1>Anmälan</h1>
+		<h1>Anmälan</h1>
 		<form action="#" class="reservation-main__form">
-			<div class="form__days">
+			<section class="form__days">
 				<h2>Jag vill anmäla mig för*</h2>
 				<label>
 					<input type="radio" id="weekend" name="days" required>
@@ -64,10 +63,9 @@
 				<label>
 					<input type="radio" id="day2" name="days">
 				Dagspass 2 dagar
-				</label>
-			  
-		  	</div>
-			<div class="form__personals">
+				</label>			  
+		  	</section>
+			<section class="form__personals">
 				<h2>Personuppgifter</h2>
 				<div class="form__firstname">
 					<label for="firstname">Förnamn* </label>
@@ -97,9 +95,9 @@
 					<label for="town">Stad</label>
 					<input type="text" id="town" name="town" placeholder="Storstaden" maxlength="20" >
 				</div>
-		  	</div>
+		  	</section>
 			
-		  	<div class="form__food">
+		  	<section class="form__food">
 				<h2>Välj till mat</h2>
 				
 				<input type="radio" id="food-meat" name="food">
@@ -108,12 +106,11 @@
 				<label for="food-fish"> Fisk</label>
 				<input type="radio" id="food-vego" name="food">
 				<label for="food-vego"> Veganskt</label>
-		  	</div>
+			</section>
 		  	<textarea name="message" rows="6" cols="30" maxlength="100" placeholder="Ange eventuella allergier eller andra önskemål"></textarea>
 			<p class="error-message">Fyll i markerade fält!</p>
 			<button class=form__button>Skicka anmälan</button>
 		</form> 
-			
 		<p class="main__footnote">*Obligatoriskt</p>
 	</main>
 
