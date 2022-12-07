@@ -83,7 +83,7 @@ margin: 0rem 0 1.5rem 0;
 		left:4.5rem;
 	}
 
-	main__section__article{
+	.main__section__article{
 		margin: 0 2rem 2rem 1.5rem;
 		max-width: 580px;
 		position: relative;
@@ -102,7 +102,7 @@ margin: 0rem 0 1.5rem 0;
 		left:4.5rem;
 	}
 
-	main__section__article{
+	.main__section__article{
 		margin: 0 2rem 2rem 1.5rem;
 		max-width: 580px;
 		position: relative;
