@@ -24,7 +24,7 @@ span{
 
 .main__content h2{
 	border-top: 1px solid black;
-	margin:2rem 0;
+	margin:2rem 0 0 0 ;
 	padding-top: 1.5rem;
 }
 
@@ -39,4 +39,8 @@ span{
 
 .program-main__button{
 	margin:1em 0 3em 0 ;
+}
+
+.main__article--dinner :first-child{
+	padding:0.2em 0;
 }
