@@ -63,7 +63,7 @@ input:invalid {
 	
 }
 
-input:invalid + .error-message {
+input:invalid, .error-message {
 	visibility:visible;
 }
 
