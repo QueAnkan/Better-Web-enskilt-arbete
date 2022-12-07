@@ -14,103 +14,103 @@
 	<script src="https://kit.fontawesome.com/1af20f8784.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header class="header">
-	<img src="Logga.png" 
-	alt="Företagslogga Carlstad Frontend Network" title="Carlstad Frontend Network">
-	
-	<a href="#main-menu"
-		id="main-menu-toggle"
-		class="menu-toggle"
-		aria-label="Öppna huvudmeny">
-		<span class="sr-only">Öppna huvudmeny</span>
-		<span class="fa fa-bars fa-2x" aria-hidden="true"></span>
- 	 </a>
-  
-	<nav id="main-menu" class="main-menu" aria-label="Huvudmeny">
-		<a href="#main-menu-toggle"
-		id="main-menu-close"
-		class="menu-close"
-		aria-label="Stäng huvudmeny">
-		<span class="sr-only">Stäng huvudmeny</span>
-		<span class="fa fa-solid fa-xmark fa-2x"
-		aria-hidden="true"></span>
+	<header class="header">
+		<img src="Logga.png" 
+		alt="Företagslogga Carlstad Frontend Network" title="Carlstad Frontend Network">
+		
+		<a href="#main-menu"
+			id="main-menu-toggle"
+			class="menu-toggle"
+			aria-label="Öppna huvudmeny">
+			<span class="sr-only">Öppna huvudmeny</span>
+			<span class="header__icon--open-menu fa fa-bars fa-2x" aria-hidden="true"></span>
 		</a>
-		<ul class="navigation__list">
-		<li><a href="program.html">Program</a></li>
-		<li><a href="form.html">Anmälan</a></li>
-		<li><a href="#contact">Kontakt</a></li>
-		</ul>
-	</nav>
-	<a href="#main-menu-toggle"
-		class="backdrop"
-		tabindex="-1"
-		aria-hidden="true" hidden></a>
 	
-</header>
-
-<main class="index-main">
-	<picture>
-		<source media="(max-width:767px)"
-		srcset="Hero-image-portrait.jpg">
-		<img src="Hero-image.webp" alt="Man vid talarpodium som pekar mot en blå bakgrund">
-	</picture>
-
-<h1 class="index__top-headline">Välkommen till CFN:s 
-	konferens 2022 - 
-	Bättre Webb</h1>
-
-	<article class="main__section__article"><h2>Vi ses 9-11 december!</h2>
-		<p>Då är det dags för CFN:s årliga konferans för frontundutvecklare,  i år med temat Bättre Webb. </p>
-		<p>
-			Vi bjuder på flera inspirerande seminarier under helgen som behandlar  allt från arbetsmiljö till vikten av god UX-design. På fredag och lördag finns möjlighet att äta en god middag med härlig underhållning. Passa också på att nätverka när kollegor från hela Sverige möts!</p>
-	</article>
-
-	<a href="program.html"><button type="button" class="index-main__button-program" >Se programmet</button></a>
-
-	<a href="form.html"><button type="button" class="index-main__button-signup">Anmäl dig direkt</button></a>
-
-</main>
-
-<footer class="footer">
-	<section class="footer__contact" id="contact">
-
-		<h3 class="footer__company-name">Carlstad Frontend Network</h3>
-		<div class=footer__e-mail>
-			<h4>Kontakta oss</h4>
-			<label for="mailto" hidden>Klicka för att mejla oss</label>
-			<a href="mailto:info@cfn.se" id="mailto">
-				<span class="fa-regular fa-envelope fa-2x" aria-hidden="true">
-				</span>
-				<p>info@cfn.se</p>
+		<nav id="main-menu" class="main-menu" aria-label="Huvudmeny">
+			<a href="#main-menu-toggle"
+			id="main-menu-close"
+			class="menu-close"
+			aria-label="Stäng huvudmeny">
+			<span class="sr-only">Stäng huvudmeny</span>
+			<span class="nav__icon--close-menu fa-solid fa-xmark fa-2x"
+			aria-hidden="true"></span>
 			</a>
-		</div>
-		<div class=footer__visit>
-			<h4>Besöksadress</h4>
-			<ul class="footer__adress">
-				<li>Drottninggatan 26</li>
-				<li>652 25 Karlstad</li>
+			<ul class="navigation__list">
+			<li><a href="program.html">Program</a></li>
+			<li><a href="form.html">Anmälan</a></li>
+			<li><a href="#contact">Kontakt</a></li>
 			</ul>
-		</div>
-		<div class="footer__social-media">
-			<h4>Följ oss</h4>
-			<label for="facebook-link" hidden> Facebook-länk</label>
-			<a href="https://www.facebook.com/" target="_blank" id="facebook-link">
-				<span class="fa-brands fa-square-facebook fa-2x"></span>
-			</a>
-			<label for="instagra-link" hidden>Instagram-länk</label>
-			<a href="https://instagram.com" target="_blank" id="instagram-länk">
-				<span class="fa-brands fa-instagram fa-2x"></span>
-			</a>
-			<label for="linkedin-link" hidden> Linkedin-länk</label>
-			<a href="https://linkedin.com" target="_blank" id="linkedin-link">
-				<span class="fa-brands fa-linkedin fa-2x"></span>
-			</a>
-			<label for="github-link" hidden>Github-länk</label>
-			<a href="http://www.github.com" target="_blank" id="github-link">
-				<span class="fa-brands fa-square-github fa-2x"></span>
-			</a>
-		</div>
-	</section>
-</footer>	
+		</nav>
+		<a href="#main-menu-toggle"
+			class="backdrop"
+			tabindex="-1"
+			aria-hidden="true" hidden></a>
+		
+	</header>
+
+	<main class="index-main">
+		<picture>
+			<source media="(max-width:767px)"
+			srcset="Hero-image-portrait.jpg">
+			<img src="Hero-image.webp" alt="Man vid talarpodium som pekar mot en blå bakgrund">
+		</picture>
+
+	<h1 class="index__top-headline">Välkommen till CFN:s 
+		konferens 2022 - 
+		Bättre Webb</h1>
+
+		<article class="main__section__article"><h2>Vi ses 9-11 december!</h2>
+			<p>Då är det dags för CFN:s årliga konferans för frontundutvecklare,  i år med temat Bättre Webb. </p>
+			<p>
+				Vi bjuder på flera inspirerande seminarier under helgen som behandlar  allt från arbetsmiljö till vikten av god UX-design. På fredag och lördag finns möjlighet att äta en god middag med härlig underhållning. Passa också på att nätverka när kollegor från hela Sverige möts!</p>
+		</article>
+
+		<a href="program.html"><button type="button" class="index-main__button-program" >Se programmet</button></a>
+
+		<a href="form.html"><button type="button" class="index-main__button-signup">Anmäl dig direkt</button></a>
+
+	</main>
+
+	<footer class="footer">
+		<section class="footer__contact" id="contact">
+
+			<h3 class="footer__company-name">Carlstad Frontend Network</h3>
+			<div class=footer__e-mail>
+				<h4>Kontakta oss</h4>
+				<label for="mailto" hidden>Klicka för att mejla oss</label>
+				<a href="mailto:info@cfn.se" id="mailto">
+					<span class="fa-regular fa-envelope fa-2x" aria-hidden="true">
+					</span>
+					<p>info@cfn.se</p>
+				</a>
+			</div>
+			<div class=footer__visit>
+				<h4>Besöksadress</h4>
+				<ul class="footer__adress">
+					<li>Drottninggatan 26</li>
+					<li>652 25 Karlstad</li>
+				</ul>
+			</div>
+			<div class="footer__social-media">
+				<h4>Följ oss</h4>
+				<label for="facebook-link" hidden> Facebook-länk</label>
+				<a href="https://www.facebook.com/" target="_blank" id="facebook-link">
+					<span class="fa-brands fa-square-facebook fa-2x"></span>
+				</a>
+				<label for="instagra-link" hidden>Instagram-länk</label>
+				<a href="https://instagram.com" target="_blank" id="instagram-länk">
+					<span class="fa-brands fa-instagram fa-2x"></span>
+				</a>
+				<label for="linkedin-link" hidden> Linkedin-länk</label>
+				<a href="https://linkedin.com" target="_blank" id="linkedin-link">
+					<span class="fa-brands fa-linkedin fa-2x"></span>
+				</a>
+				<label for="github-link" hidden>Github-länk</label>
+				<a href="http://www.github.com" target="_blank" id="github-link">
+					<span class="fa-brands fa-square-github fa-2x"></span>
+				</a>
+			</div>
+		</section>
+	</footer>	
 </body>
 </html>
