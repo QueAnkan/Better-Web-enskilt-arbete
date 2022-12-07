@@ -196,6 +196,11 @@ footer h4{
 
 .footer__company-name{
 	padding:1em 0;	
+	transition:0.5s ease-in-out;
+}
+
+.footer__company-name:hover{
+	transform: rotateX(180deg);
 }
 
 .footer__e-mail{
