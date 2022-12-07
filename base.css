@@ -57,7 +57,7 @@ a{
 	color:var(--darkblue)
 }
 
-a:hover, a:focus, .fa-bars:hover, .fa-bars:focus{
+a:hover, a:focus, .header__icon--open-menu:hover, .header__icon--open-menu:focus{
 	color:var(--gold);
 }
 
@@ -77,7 +77,7 @@ a:hover, a:focus, .fa-bars:hover, .fa-bars:focus{
 	padding:0;
 }
 
-.fa-bars{
+.header__icon--open-menu{
 	padding:15px;
 }
 
@@ -132,7 +132,7 @@ a:hover, a:focus, .fa-bars:hover, .fa-bars:focus{
 	text-decoration:underline ;
 }
 
-.fa-xmark:hover, .fa-xmark:focus{
+.nav__icon--close-menu:hover, .nav__icon--close-menu:focus{
 	color:var(--gold);
 }
 
@@ -439,7 +439,7 @@ footer a{
 		
 	}
 
-	footer__visit{
+	.footer__visit{
 		padding-top: 0.5rem;
 	}
 }
