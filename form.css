@@ -11,10 +11,17 @@
 	font-family:'Encode Sans Semi Condensed', sans-serif;
 	color:var(--darkblue)
 }
- 
-.reservation-main h1{
+
+fieldset{
+    border:none;
+  }
+  
+  legend{
+    font-size:1.5rem;
+    font-weight:600;
 	padding-top:1rem;
-}
+	margin-left:0.7rem;
+  }
 
 .reservation-main  h2{
 	font-size: 1rem;
@@ -51,24 +58,39 @@ input:hover, label:hover{
 	cursor:pointer;	
 }	
 
-input:invalid {
-	box-shadow: 0 0 2px 1px var(--darkblue);
-	
+input:valid{
+	background-color:rgb(219, 234, 219);
+		border: 1px solid var(--gold);
+	   border-radius: 5px;
 }
 
-.error-message {
-	/*visibility: hidden;*/
-	align-self: center;
-	margin:0;
-	
+.form__input:placeholder-shown{ 
+	background-color:white;
+	border: 1px solid var(--darkblue);
+	border-radius: 5px;
+}
+  
+input:not(placeholder-shown):invalid{
+	border:1px solid rgb(199, 44, 44);
+	border-radius: 5px;
+	background-color:rgb(246, 193, 193);
 }
 
-input:invalid, .error-message {
-	visibility:visible;
+input[type=radio]:invalid{
+	box-shadow: 0 0 0.5px 0.5px var(--darkblue);
+}
+
+input:optional{
+	border: 1px solid var(--gold);
+	background-color:white;
+	border-radius: 5px;
 }
 
 
-/*här slutar kod för mer övergripande regler*/
+  
+/*här slutar kod för mer allmänna regler*/
+
+
 
 .form__days{
 	display:flex;
@@ -116,9 +138,15 @@ height:1.2rem;
 .form__food >label{
 	padding-right:0.5rem
 }
+
+textarea{
+	border-color: var(--gold);
+}
+
 .form__button{
 	width:fit-content;
 	padding: 0.7rem;
+	margin-top:1.5rem;
 	border-radius: 25px;
 	margin-left:3.5rem;
 	box-shadow:hsl(218, 40%, 45%)

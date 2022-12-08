@@ -48,7 +48,9 @@
 	</header>
 
 	<main class="reservation-main">
-		<h1>Anmälan</h1>
+		<fieldset>
+		<legend>Anmälan</legend>
+		
 		<form action="#" class="reservation-main__form">
 			<section class="form__days">
 				<h2>Jag vill anmäla mig för*</h2>
@@ -57,11 +59,11 @@
 				Hela helgen
 				</label>   
 				<label >
-					<input type="radio" id="day1" name="days">
+					<input type="radio" id="day1" class="form__input"  name="days">
 					Dagspass 1 dag
 				</label>
 				<label>
-					<input type="radio" id="day2" name="days">
+					<input type="radio" id="day2" class="form__input"  name="days">
 				Dagspass 2 dagar
 				</label>			  
 		  	</section>
@@ -69,37 +71,36 @@
 				<h2>Personuppgifter</h2>
 				<div class="form__firstname">
 					<label for="firstname">Förnamn* </label>
-					<input type="text" id="firstname"  minlenght="2" placeholder="Anna" required>
+					<input type="text" id="firstname" class="form__input" minlength="2" placeholder="Anna" required>
 				</div>
 				<div class="form__lastname">
 					<label for="lastname">Efternamn* </label>
-					<input type="text" id="lastname"  minlenght="2" placeholder="Andersson" required>
+					<input type="text" id="lastname" class="form__input"  minlength="2" placeholder="Andersson" required>
 				</div>
 				<div class="form__birthday">
 					<label for="birthday">Födelseår*</label>
-					<input type="number" id="birthday" name="birthday" min= 1930 max=2007 required>
+					<input type="number" id="birthday" class="form__input" name="birthday" min= 1935 max=2007  placeholder="1935" required>
 				</div>
 				<div class="form__email">
 					<label for="email"> E-post*</label>
-					<input type="email" id="email" placeholder="epost@exempel.com" required>
+					<input type="email" id="email" class="form__input"  placeholder="epost@exempel.com" required>
 				</div>
 				<div class="form__street">
 					<label for="street-adress">Gatuadress</label> 
-					<input type="text" id="street-name" name="street-name" placeholder="Konferansgatan 1" maxlength="40">
+					<input type="text" id="street-name"  placeholder="Konferansgatan 1" maxlength="40">
 				</div>
 				<div class="form__zip-code">	
 					<label for="zip-code">Postnummer</label> 
-					<input type="text" id="zip-code" name="zip-code" pattern="[1-9]{5}" placeholder="12345">
+					<input type="text" id="zip-code"  pattern="[1-9]{5}" placeholder="12345">
 				</div>
 				<div class="form__town">
 					<label for="town">Stad</label>
-					<input type="text" id="town" name="town" placeholder="Storstaden" maxlength="20" >
+					<input type="text" id="town"  placeholder="Storstaden" maxlength="20" >
 				</div>
 		  	</section>
 			
 		  	<section class="form__food">
 				<h2>Välj till mat</h2>
-				
 				<input type="radio" id="food-meat" name="food">
 				<label for="food-meat"> Kött</label>
 				<input type="radio" id="food-fish" name="food">
@@ -107,12 +108,13 @@
 				<input type="radio" id="food-vego" name="food">
 				<label for="food-vego"> Veganskt</label>
 				<input type="radio" id="food-nofood" name="food">
-				<label for="food-vego"> Ingen mat </label>
+				<label for="food-nofood"> Ingen mat </label>
 			</section>
+			
 		  	<textarea name="message" rows="6" cols="30" maxlength="100" placeholder="Ange eventuella allergier eller andra önskemål"></textarea>
-			<p class="error-message">Fyll i markerade fält!</p>
 			<button class=form__button>Skicka anmälan</button>
 		</form> 
+	</fieldset>
 		<p class="main__footnote">*Obligatoriskt</p>
 	</main>
 
@@ -138,19 +140,20 @@
 			<div class="footer__social-media">
 				<h4>Följ oss</h4>
 				<label for="facebook-link" hidden> Facebook-länk</label>
-				<a href="https://www.facebook.com/" target="_blank" id="facebook-link">
+				<a href="https://www.facebook.com/" target="_blank" id="facebook-link" alt="länk till facebook">
 					<span class="fa-brands fa-square-facebook fa-2x"></span>
 				</a>
 				<label for="instagra-link" hidden>Instagram-länk</label>
-				<a href="https://instagram.com" target="_blank" id="instagram-länk">
+				<a href="https://instagram.com" target="_blank" id="instagram-länk"
+				alt="länk till instagram">
 					<span class="fa-brands fa-instagram fa-2x"></span>
 				</a>
 				<label for="linkedin-link" hidden> Linkedin-länk</label>
-				<a href="https://linkedin.com" target="_blank" id="linkedin-link">
+				<a href="https://linkedin.com" target="_blank" id="linkedin-link" alt="länk till linkedin">
 					<span class="fa-brands fa-linkedin fa-2x"></span>
 				</a>
 				<label for="github-link" hidden>Github-länk</label>
-				<a href="http://www.github.com" target="_blank" id="github-link">
+				<a href="http://www.github.com" target="_blank" id="github-link" alt="länk till github">
 					<span class="fa-brands fa-square-github fa-2x"></span>
 				</a>
 			</div>
