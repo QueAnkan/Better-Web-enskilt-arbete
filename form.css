@@ -70,27 +70,27 @@ input:valid{
 	border-radius: 5px;
 }
   
-input:invalid{
+input:not(placeholder-shown):invalid{
 	border:1px solid rgb(199, 44, 44);
 	border-radius: 5px;
-	background-color:rgb(246, 193, 193) ;
+	background-color:rgb(246, 193, 193);
 }
 
-  
 input[type=radio]:invalid{
 	box-shadow: 0 0 0.5px 0.5px var(--darkblue);
 }
-
 
 input:optional{
 	border: 1px solid var(--gold);
 	background-color:white;
 	border-radius: 5px;
 }
+
+
   
+/*här slutar kod för mer allmänna regler*/
 
 
-/*här slutar kod för mer övergripande regler*/
 
 .form__days{
 	display:flex;
@@ -138,6 +138,11 @@ height:1.2rem;
 .form__food >label{
 	padding-right:0.5rem
 }
+
+textarea{
+	border-color: var(--gold);
+}
+
 .form__button{
 	width:fit-content;
 	padding: 0.7rem;
