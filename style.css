@@ -8,7 +8,7 @@
 
 }
 
-.index__h1{
+.main__h1{
 	font-size: 1.5rem;
 	background-color: rgba(237, 243, 253, 0.7);
 	max-width: 200px;
@@ -66,7 +66,7 @@ margin: 0rem 0 1.5rem 0;
 }
 
 @media screen and (min-width: 768px) and (max-width:991px){
-	.index__top-headline{
+	.main__h1{
 		font-size: 1.7rem;
 		max-width: 350px;
 		position:relative;
@@ -86,7 +86,7 @@ margin: 0rem 0 1.5rem 0;
 }
 
 @media screen and (min-width:992px) and (max-width:1023px) {
-	.index__top-headline{
+	.main__h1{
 		font-size: 1.7rem;
 		max-width: 350px;
 		position:relative;
@@ -105,7 +105,7 @@ margin: 0rem 0 1.5rem 0;
 
 }
 @media screen and (min-width:1024px) {
-	.index__top-headline{
+	.main__h1{
 		font-size: 1.7rem;
 		max-width: 350px;
 		position:relative;
