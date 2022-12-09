@@ -78,13 +78,13 @@ a:hover, a:focus, .header__icon--open-menu:hover, .header__icon--open-menu:focus
 	padding:0;
 }
 
-.header__icon--open-menu{
+.header__icon--open-menu, .nav__icon--close-menu{
 	padding:15px;
 }
 
 /*Här börjar navbar*/
 
-.sr-only {
+.screenreader-only {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -95,7 +95,7 @@ a:hover, a:focus, .header__icon--open-menu:hover, .header__icon--open-menu:focus
 	border: 0;
 }     
      
-.main-menu {
+.nav--main-menu {
 	position: absolute;
 	display: none;
 	left: 200px;
@@ -107,7 +107,7 @@ a:hover, a:focus, .header__icon--open-menu:hover, .header__icon--open-menu:focus
 		z-index: 10;
 }
 
-.main-menu ul {
+.nav--main-menu ul {
 	list-style: none;
 	margin: 0;
 	padding: 4em 0 0;
@@ -120,7 +120,7 @@ a:hover, a:focus, .header__icon--open-menu:hover, .header__icon--open-menu:focus
 	background: var(--lightblue);
 }
 
-.main-menu a {
+.nav--main-menu a {
 	display: block;
 	padding: .75em 15px;
 	line-height: 1em;
@@ -128,8 +128,8 @@ a:hover, a:focus, .header__icon--open-menu:hover, .header__icon--open-menu:focus
 	font-family: 'Encode Sans Semi Condensed', sans-serif;
 }
 
-.main-menu a:hover,
-.main-menu a:focus {
+.nav--main-menu a:hover,
+.nav--main-menu a:focus {
 	text-decoration:underline ;
 }
 
@@ -137,32 +137,32 @@ a:hover, a:focus, .header__icon--open-menu:hover, .header__icon--open-menu:focus
 	color:var(--gold);
 }
 
-.main-menu .menu-close {
+.nav--main-menu .nav--menu-close {
 	position: absolute;
 	right: 0;
 	top: 0;
 }
 
-.main-menu:target,
-.main-menu[aria-expanded="true"] {
+.nav--main-menu:target,
+.nav--main-menu[aria-expanded="true"] {
 	display: block;
 	left: 0;
 	outline: none;
 }
 
-.main-menu:target .menu-close,
-.main-menu[aria-expanded="true"] .menu-close {
+.nav--main-menu:target .nav--menu-close,
+.nav--main-menu[aria-expanded="true"] .menu-close {
   	z-index: 12;
 }
 
-.main-menu:target ul,
-.main-menu[aria-expanded="true"] ul {
+.nav--main-menu:target ul,
+.nav--main-menu[aria-expanded="true"] ul {
 	position: relative;
 	z-index: 11;
 }
 
-.main-menu:target + .backdrop,
-.main-menu[aria-expanded="true"] + .backdrop{
+.nav--main-menu:target + .backdrop,
+.nav--main-menu[aria-expanded="true"] + .backdrop{
 	position: absolute;
 	display: block;  
 	left: 0;
@@ -249,12 +249,12 @@ footer a{
 		align-items: center;
 	}
 
-	.menu-toggle,
-	.main-menu .menu-close {
+	.header__menu-toggle,
+	.nav--main-menu .nav--menu-close {
 		display: none;
 	}
 	
-	.main-menu {
+	.nav--main-menu {
 		position: relative;
 		left: auto;
 		top: auto;
@@ -263,7 +263,7 @@ footer a{
 		
 	}
 	
-	.main-menu ul {
+	.nav--main-menu ul {
 		display: flex;
 		padding: 0;
 		-webkit-box-shadow: none;
@@ -274,11 +274,11 @@ footer a{
 		background: none;
 	}
 	
-	.main-menu a {
+	.nav--main-menu a {
 		color: var(--darkblue);
 	}
 
-	.main-menu a:hover, .main-menu a:focus{
+	.nav--main-menu a:hover, .nav--main-menu a:focus{
 		color: var(--gold);
 		text-decoration: none;
 	}
@@ -326,8 +326,8 @@ footer a{
 		align-items: center;
 	}
 
-	.menu-toggle,
-	.main-menu .menu-close {
+	.header__menu-toggle,
+	.nav--main-menu .nav--menu-close {
 		display: none;
 	}
 	
@@ -339,7 +339,7 @@ footer a{
 		display: block;
 	}
 	
-	.main-menu ul {
+	.nav--main-menu ul {
 		display: flex;
 		padding: 0;
 		-webkit-box-shadow: none;
@@ -350,11 +350,11 @@ footer a{
 		background: none;
 	}
 	
-	.main-menu a {
+	.nav--main-menu a {
 		color: var(--darkblue);
 	}
 
-	.main-menu a:hover, .main-menu a:focus{
+	.nav--main-menu a:hover, .nav--main-menu a:focus{
 		color: var(--gold);
 		text-decoration: none;
 	}
@@ -393,12 +393,12 @@ footer a{
 		align-items: center;
 	}
 
-	.menu-toggle,
-	.main-menu .menu-close {
+	.header__menu-toggle,
+	.nav--main-menu .nav--menu-close {
 		display: none;
 	}
 	
-	.main-menu {
+	.nav--main-menu {
 		position: relative;
 			left: auto;
 			top: auto;
@@ -406,7 +406,7 @@ footer a{
 		display: block;
 	}
 	
-	.main-menu ul {
+	.nav--main-menu ul {
 		display: flex;
 		padding: 0;
 		-webkit-box-shadow: none;
@@ -417,11 +417,11 @@ footer a{
 		background: none;
 	}
 	
-	.main-menu a {
+	.nav--main-menu a {
 		color: var(--darkblue);
 	}
 
-	.main-menu a:hover, .main-menu a:focus{
+	.nav--main-menu a:hover, .nav--main-menu a:focus{
 		color: var(--gold);
 		text-decoration: none;
 	}
