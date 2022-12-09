@@ -11,6 +11,16 @@ span{
 	font-weight: 700;
 }
 
+.main__picture{
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+}
+
+.main__picture img{
+	border-radius: 0.5rem;
+}
+
+
 .main__content{
 	margin: 1.5rem;
 	max-width: 580px;
